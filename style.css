@@ -1,0 +1,158 @@
+body{
+    background:#a0a0a0;
+
+    margin:0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin:0;
+    padding: 0;
+}
+
+#app{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    margin:10px auto;
+    padding:0px;
+    background:#dbdbdb;
+
+    border:1px solid #757575;
+}
+
+#tiempo{
+    margin-bottom:5px ;
+    font-size: 30px;
+}
+
+#crono{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border:1px solid #ccc;  */
+    margin:10px auto;
+    padding:10px;
+}
+
+#contenedor-tareas{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    /* border:1px solid #ccc;  */
+    margin:10px auto;
+    padding:10px;
+    
+    box-sizing: border-box;
+}
+
+#form{
+    display:flex;
+    width: 100%;
+    box-sizing: border-box;
+    
+    margin:10px auto;
+    padding:10px;
+    
+}
+
+#form #tarea{
+    width: 100%;
+}
+
+#btnAgregar{
+    background: rgb(4, 101, 228);
+    color:#dfdfdf;
+    height: 35px;
+    border:none;
+    border-radius: 0px 4px 4px 0px;
+    &:hover{
+        background: rgb(63, 139, 238);
+
+    }
+}
+
+
+
+#tareas{
+    display:flex;
+    border:1px dashed #222;
+    margin:10px auto;
+    padding:10px;
+}
+
+.tarea_asignada{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:5px; 
+    background:#c2c2c2;
+    border-radius: 4px 4px 4px 4px;
+    overflow-wrap:break-word;
+    word-break: break-all;
+}
+
+.tarea_asignada .btnEliminar  {
+    height: 35px;
+    width: 35px;
+}
+
+.btnIniciar{
+    background: rgb(4, 101, 228);
+    color:#dfdfdf;
+    height: 35px;
+    width: 140px;
+    border:none;
+    border-radius: 4px 0px 0px 4px;
+    &:hover{
+        background: rgb(63, 139, 238);
+
+    }
+    
+}
+
+.btnCompletada{
+    background: rgb(19, 153, 14);
+    color:#fff;
+    height: 35px;
+    width: 140px;
+    border:none;
+    border-radius: 4px 0px 0px 4px;
+}
+
+.tareaEnProgreso{
+    background: rgb(240, 236, 8);
+    color:#000;
+    height: 35px;
+    border:none;
+    border-radius: 4px 0px 0px 4px;
+}
+
+
+
+center button {
+    background:rgb(201, 221, 240);
+    height: 30px;
+    border:none;
+    border-radius: 2px;
+    &:hover{
+        background:rgb(255, 255, 255);
+        
+    }
+}
+   
+
+
+@media only screen and (min-width:720px){
+        #app{        
+            width: 600px;
+            border:1px solid #7e7e7e;
+            
+            border-radius: 6px;
+        }
+    
+    }    
